@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-image: url(background.jpg);
+        background-size: cover;
+    }
+.container {
+  position: relative;
+  
+}
+
+.black-box {
+  position: relative;
+  z-index: -1;
+  border: 2px hidden black;
+  width:200px;
+  height: 300px;
+  margin: 60px;
+  
+}
+.black-box, img{
+    width:200px;
+    height:300px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 2; /* gray box will be above both green and black box */
+  border:2px solid black;
+  border-radius: 5px;
+  height: 300px;  
+  width: 200px;
+  left: 100px;
+  top: 90px;
+}
+.gray-box, img{
+    width:200px;
+    height:300px;
+    
+}
+
+.green-box {
+  position: absolute;
+  z-index: 3; /* green box will be above black box */
+  border:2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  left: 130px;
+  top: 118px;
+  height: 300px;
+}
+.green-box, img{
+    width:200px;
+    height:300px;
+}
+
+.pink-box {
+  position: absolute;
+  z-index: 4; /* green box will be above black box */
+  border:2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  left: 160px;
+  top: 150px;
+  height: 300px;
+}
+.pink-box, img{
+    width:200px;
+    height:300px;
+}
+
+.yellow-box {
+  position: absolute;
+  z-index: 5; /* green box will be above black box */
+  border:2px hidden black;  
+  width: 200px;
+  left: 190px;
+  top: 185px;
+  height: 300px;
+}
+.yellow-box, img{
+    width:200px;
+    height:300px;
+}
+</style>
+</head>
+<body>
+
+
+
+<!--div class="container"-->
+  <div class="black-box">
+    <img src="a.png" alt="a card">
+  </div>
+  <div class="gray-box">
+    <img src="k.jpg" alt="k card">
+  </div>
+  <div class="green-box">
+    <img src="q.jpg" alt="q card">
+  </div>
+  <div class="pink-box">
+    <img src="j.png" alt="j card">
+  </div>
+  <div class="yellow-box">
+    <img src="10.png" alt="10 card">
+  </div>
+</div>
+
+</body>
+</html>
+
+
